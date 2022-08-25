@@ -20,7 +20,7 @@ const GreetingContainer: React.FC<GreetingContainerPropsType> = ({users, addUser
         setName(e.currentTarget.value); // need to fix
     }
     const addUser = () => {
-        if (name === '') {
+        if (name.trim() === '') {
             setError('Заполните Имя')
         } else {
             addUserCallback(name);
