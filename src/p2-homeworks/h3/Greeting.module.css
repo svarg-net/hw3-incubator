@@ -5,3 +5,31 @@
 .error {
     border: 1px solid red;
 }
+
+.no_error {
+    border: 1px solid #f1ff00;
+}
+
+input {
+    background: #282c34;
+    border: 1px solid #282c34;
+    color: #f1ff00;
+    margin: 10px 5px;
+}
+
+button {
+    background: #282c34;
+    color: #f1ff00;
+    margin: 10px 5px;
+}
+
+button:disabled {
+    color: red;
+}
+
+.text_error{
+    color: red;
+    margin: 0px 5px;
+    display: block;
+}
+
