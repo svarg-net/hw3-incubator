@@ -14,7 +14,7 @@ const Greeting: React.FC<GreetingPropsType> = (
     {name, setNameCallback, addUser, error, totalUsers} // деструктуризация пропсов
 ) => {
     const inputClass = error == '' ? s.no_error : s.error // need to fix with (?:)
-    const statusButton = name !== '' ? false : true;
+    const statusButton = name.trim() !== '' ? false : true;
     const spanClassError = s.text_error;
 
     return (
